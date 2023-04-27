@@ -1,0 +1,189 @@
+/* Main */
+body {
+  background-color: #efefef;
+  color: #1A2966;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  min-width: 24em;
+}
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 16px;
+}
+main {
+  margin: 8em auto 2em;
+  padding: 0 2em;
+  max-width: 100%;
+}
+a {
+  color: #1A2966;
+}
+a:hover {
+  color: #DC554F;
+}
+footer {
+  display: block;
+  margin: 3em 0;
+  padding-left: 2em;
+}
+#nav-contact .nav-contact a,
+#nav-publications .nav-publications a,
+#nav-resume .nav-resume a {
+  color: #DC554F;
+}
+
+/* Home */
+p {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.9em;
+  font-family: 'Bree Serif', serif;
+}
+.under-position {
+  position: relative;
+}
+.under {
+  position: absolute;
+  top: 2.2em;
+  left: -9em;
+  font-size: .6em;
+  line-height: 1em;
+  width: 10em;
+  color: #DC554F;
+  font-family: 'Dancing Script', cursive;
+  text-align: right;
+}
+.emoji {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+/* Contact */
+#contact ul {
+  list-style: none;
+  padding-left: 2em;
+}
+#contact li {
+  line-height: 3em;
+}
+.social-container {
+  position: relative;
+}
+.social-container:hover {
+  color:#DC554F;
+}
+.social-icon {
+  display: inline-block;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  left: -2.5em;
+  top: -.2em;
+}
+#linkedin {
+  background: url("../img/linkedin.png") no-repeat;
+  background-size: 2em;
+}
+.social-container:hover #linkedin {
+  background: url("../img/linkedin-hover.png") no-repeat;
+  background-size: 2em;
+}
+#twitter {
+  background: url("../img/twitter.png") no-repeat;
+  background-size: 2em;
+}
+.social-container:hover #twitter {
+  background: url("../img/twitter-hover.png") no-repeat;
+  background-size: 2em;
+}
+#instagram {
+  background: url("../img/instagram.png") no-repeat;
+  background-size: 2em;
+}
+.social-container:hover #instagram {
+  background: url("../img/instagram-hover.png") no-repeat;
+  background-size: 2em;
+}
+#powerpage {
+  background: url("../img/powerpage.png") no-repeat;
+  background-size: 2em;
+}
+.social-container:hover #powerpage {
+  background: url("../img/powerpage-hover.png") no-repeat;
+  background-size: 2em;
+}
+#email {
+  background: url("../img/email.png") no-repeat;
+  background-size: 2em;
+}
+.social-container:hover #email {
+  background: url("../img/email-hover.png") no-repeat;
+  background-size: 2em;
+}
+#jason-email {
+  display: inline-block;
+  position: inherit;
+  top: 1em;
+  width: 8em;
+  line-height: 3em;
+  background: url("../img/jason-email.png") no-repeat;
+  background-size: 8em;
+}
+.social-container:hover #jason-email {
+  background: url("../img/jason-email-hover.png") no-repeat;
+  background-size: 8em;
+}
+
+/* Publications */
+#publications ul {
+  list-style: none;
+  width: 20em;
+  margin: 0 auto;
+  padding: 0;
+}
+#publications li {
+  height: 5em;
+}
+#publications img {
+  height: 5em;
+  width: auto;
+  margin: 0 1em;
+  vertical-align: top;
+}
+#publications a {
+  width: 10em;
+  height: 5em;
+  display: inline-block;
+  margin-top: 1em;
+}
+#publications a.publication-long {
+  margin-top: 0;
+}
+
+/* Resume */
+#resume {
+  max-width: 30em;
+}
+#resume ul {
+  text-align: left;
+}
+#resume li {
+  font-size: .8em;
+  margin-bottom: .5em;
+}
+#resume h2 {
+  font-size: 1.2em;
+  margin: 1em auto 0;
+  color: #DC554F;
+}
+#resume h3 {
+  margin: 0 auto;
+}
+#resume h4 {
+  margin: 0 auto;
+  font-family: 'Rubik', sans-serif;
+}
+#resume h4#address {
+  margin: 3em auto 0;
+}
