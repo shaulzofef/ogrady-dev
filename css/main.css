@@ -176,6 +176,7 @@ p {
   height: 5rem;
   display: inline-block;
   margin-top: 1rem;
+  text-align: left;
 }
 #publications a.publication-long {
   margin-top: 0;
