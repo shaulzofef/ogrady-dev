@@ -49,17 +49,16 @@
 }
 
 .nav-wrapper.active ul{
-  width: 20em;
-  margin-right: 2em;
+  width: 17em;
+  margin-right: .7em;
 }
 
 nav a{
   color: #1A2966;
   text-decoration: none;
   transition: .3s;
-  font-size: .8em;
   font-family: 'Rubik', sans-serif;
-  text-transform: uppercase;
+  font-size: .9rem;
 }
 
 nav a:hover{
