@@ -1,67 +1,75 @@
 /* Main */
+:root {
+  --main: #1A2966;
+  --alt: #DC554F;
+  --highlight: #14bec3;
+  --background: #eee;
+}
+
 html {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 body {
-  background-color: #efefef;
-  color: #1A2966;
-  font-family: 'Bree Serif', serif;
+  background-color: var(--background);
+  color: var(--main);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
   text-align: center;
-  min-width: 19em;
+  min-width: 370px;
 }
 .wrapper {
   width: 100%;
   max-width: 100%;
-  padding: 0 1rem;
+  padding: 0 .5rem;
 }
 main {
-  margin: 8em auto 2rem;
+  margin: 7rem auto 2rem;
   max-width: 100%;
 }
 a {
-  color: #1A2966;
+  color: var(--main);
 }
 a:hover {
   color: #DC554F;
+}
+a:link {
+  text-decoration: none;
 }
 .navigation {
   font-size: 1.1rem;
 }
 footer {
-  font-family: 'Rubik', sans-serif;
   font-size: .9rem;
   display: block;
   margin: 3rem 0;
-  padding-left: 2rem;
-  line-height: 2rem;
-}
-footer a {
-  text-decoration: none;
+  padding-left: 3rem;
 }
 #nav-contact .nav-contact a,
 #nav-publications .nav-publications a,
 #nav-resume .nav-resume a {
-  color: #DC554F;
+  color: var(--alt);
 }
 
 /* Home */
 p {
-  text-align: center;
-  font-size: 1.3rem;
-  font-size: clamp(1.3rem, 0.6rem + 2.8vw, 2rem);
   font-family: 'Bree Serif', serif;
+  text-align: center;
+  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 0.45rem + 2.6vw, 2.4rem);
+  line-height: 1.5rem;
+  line-height: clamp(1.5rem, 1rem + 2vw, 2.5rem);;
 }
 .under-position {
   position: relative;
 }
 .under {
   position: absolute;
-  top: 2.2em;
+  top: 1.9em;
   left: -12em;
-  font-size: .5em;
+  font-size: .55em;
   line-height: 1em;
   width: 10em;
-  color: #DC554F;
+  color: var(--alt);
   font-family: 'Dancing Script', cursive;
   text-align: right;
 }
@@ -82,7 +90,7 @@ p {
 /* Contact */
 #contact ul {
   list-style: none;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 #contact li {
   line-height: 2rem;
@@ -92,22 +100,23 @@ p {
   position: relative;
 }
 .social-container:hover {
-  color:#DC554F;
+  color: var(--alt);
 }
 .social-icon {
   display: inline-block;
   position: absolute;
   width: 2rem;
   height: 2rem;
-  left: -2.5rem;
+  left: -2.7rem;
+  top: -.5rem;
 }
 #linkedin {
   background: url("../img/linkedin.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 .social-container:hover #linkedin {
   background: url("../img/linkedin-hover.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 #twitter {
   background: url("../img/twitter.png") no-repeat;
@@ -158,27 +167,28 @@ p {
 /* Publications */
 #publications ul {
   list-style: none;
-  width: 20rem;
   margin: 0 auto;
   padding: 0;
 }
 #publications li {
-  height: 5rem;
+  margin-top: 1.5rem;
 }
 #publications img {
   height: 5rem;
   width: auto;
-  margin: 0 1rem;
   vertical-align: top;
 }
 #publications a {
-  width: 10rem;
-  height: 5rem;
-  display: inline-block;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  text-align: left;
 }
-#publications a.publication-long {
-  margin-top: 0;
+.pub-text {
+  width: 10rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+#publications span {
+  font-size: .7rem;
 }
 
 /* Resume */
@@ -189,23 +199,64 @@ p {
   text-align: left;
 }
 #resume li {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+}
+#resume h1, h2, h3, h4 {
+  margin: 0 auto;
+  font-weight: normal;
 }
 #resume h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 #resume h2 {
   font-size: 1.2rem;
-  margin: 1rem auto 0;
-  color: #DC554F;
+  margin-top: 2.5rem;
+  color: var(--alt);
 }
-#resume h3 {
-  margin: 0 auto;
-}
-#resume h4 {
-  margin: 0 auto;
-  font-family: 'Rubik', sans-serif;
+#resume span {
+  color: var(--highlight);
 }
 #resume h4#address {
-  margin: 3rem auto 0;
+  margin-top: 2rem;
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--highlight);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main: #eee;
+    --highlight: #00f9ff;
+    --background: #171f40;
+}
+  #linkedin {
+    background: url("../img/linkedin-white.png") no-repeat;
+    background-size: 2rem;
+  }
+  #twitter {
+    background: url("../img/twitter-white.png") no-repeat;
+    background-size: 2rem;
+  }
+  #instagram {
+    background: url("../img/instagram-white.png") no-repeat;
+    background-size: 2rem;
+  }
+  #powerpage {
+    background: url("../img/powerpage-white.png") no-repeat;
+    background-size: 2rem;
+  }
+  #email {
+    background: url("../img/email-white.png") no-repeat;
+    background-size: 2rem;
+  }
+  #jason-email {
+    display: inline-block;
+    position: inherit;
+    top: .5rem;
+    width: 8rem;
+    line-height: 2rem;
+    background: url("../img/jason-email-white.png") no-repeat;
+    background-size: 8rem;
+  }
 }
