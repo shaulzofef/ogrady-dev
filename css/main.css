@@ -1,19 +1,21 @@
 /* Main */
+html {
+  font-size: 1.1rem;
+}
 body {
   background-color: #efefef;
   color: #1A2966;
   font-family: 'Bree Serif', serif;
   text-align: center;
-  min-width: 24em;
+  min-width: 19em;
 }
 .wrapper {
   width: 100%;
   max-width: 100%;
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 main {
-  margin: 8em auto 2em;
-  padding: 0 2em;
+  margin: 8em auto 2rem;
   max-width: 100%;
 }
 a {
@@ -22,10 +24,19 @@ a {
 a:hover {
   color: #DC554F;
 }
+.navigation {
+  font-size: 1.1rem;
+}
 footer {
+  font-family: 'Rubik', sans-serif;
+  font-size: .9rem;
   display: block;
-  margin: 3em 0;
-  padding-left: 2em;
+  margin: 3rem 0;
+  padding-left: 2rem;
+  line-height: 2rem;
+}
+footer a {
+  text-decoration: none;
 }
 #nav-contact .nav-contact a,
 #nav-publications .nav-publications a,
@@ -36,8 +47,8 @@ footer {
 /* Home */
 p {
   text-align: center;
-  font-size: 1.3em;
-  line-height: 1.9em;
+  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 0.6rem + 2.8vw, 2rem);
   font-family: 'Bree Serif', serif;
 }
 .under-position {
@@ -46,8 +57,8 @@ p {
 .under {
   position: absolute;
   top: 2.2em;
-  left: -9em;
-  font-size: .6em;
+  left: -12em;
+  font-size: .5em;
   line-height: 1em;
   width: 10em;
   color: #DC554F;
@@ -55,17 +66,27 @@ p {
   text-align: right;
 }
 .emoji {
-  width: 1.3em;
-  height: 1.3em;
+  width: 1.2em;
+  height: 1.2em;
 }
+#prexel, #california {
+  margin-left: .2em;
+}
+ #dog {
+   margin-left: .4em;
+ }
+ #boba {
+   margin-left: -.2em;
+ }
 
 /* Contact */
 #contact ul {
   list-style: none;
-  padding-left: 2em;
+  padding-left: 2rem;
 }
 #contact li {
-  line-height: 3em;
+  line-height: 2rem;
+  padding: .4rem 0;
 }
 .social-container {
   position: relative;
@@ -76,10 +97,9 @@ p {
 .social-icon {
   display: inline-block;
   position: absolute;
-  width: 2em;
-  height: 2em;
-  left: -2.5em;
-  top: -.2em;
+  width: 2rem;
+  height: 2rem;
+  left: -2.5rem;
 }
 #linkedin {
   background: url("../img/linkedin.png") no-repeat;
@@ -91,71 +111,72 @@ p {
 }
 #twitter {
   background: url("../img/twitter.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 .social-container:hover #twitter {
   background: url("../img/twitter-hover.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 #instagram {
   background: url("../img/instagram.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 .social-container:hover #instagram {
   background: url("../img/instagram-hover.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 #powerpage {
   background: url("../img/powerpage.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 .social-container:hover #powerpage {
   background: url("../img/powerpage-hover.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 #email {
   background: url("../img/email.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 .social-container:hover #email {
   background: url("../img/email-hover.png") no-repeat;
-  background-size: 2em;
+  background-size: 2rem;
 }
 #jason-email {
   display: inline-block;
   position: inherit;
-  top: 1em;
-  width: 8em;
-  line-height: 3em;
+  top: .5rem;
+  width: 8rem;
+  line-height: 2rem;
   background: url("../img/jason-email.png") no-repeat;
-  background-size: 8em;
+  background-size: 8rem;
 }
 .social-container:hover #jason-email {
   background: url("../img/jason-email-hover.png") no-repeat;
-  background-size: 8em;
+  background-size: 8rem;
 }
 
 /* Publications */
 #publications ul {
   list-style: none;
-  width: 20em;
+  width: 20rem;
   margin: 0 auto;
   padding: 0;
 }
 #publications li {
-  height: 5em;
+  height: 5rem;
 }
 #publications img {
-  height: 5em;
+  height: 5rem;
   width: auto;
-  margin: 0 1em;
+  margin: 0 1rem;
   vertical-align: top;
 }
 #publications a {
-  width: 10em;
-  height: 5em;
+  width: 10rem;
+  height: 5rem;
   display: inline-block;
-  margin-top: 1em;
+  margin-top: 1rem;
+  text-align: left;
 }
 #publications a.publication-long {
   margin-top: 0;
@@ -163,18 +184,20 @@ p {
 
 /* Resume */
 #resume {
-  max-width: 30em;
+  max-width: 30rem;
 }
 #resume ul {
   text-align: left;
 }
 #resume li {
-  font-size: .8em;
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
+}
+#resume h1 {
+  font-size: 1.8rem;
 }
 #resume h2 {
-  font-size: 1.2em;
-  margin: 1em auto 0;
+  font-size: 1.2rem;
+  margin: 1rem auto 0;
   color: #DC554F;
 }
 #resume h3 {
@@ -185,5 +208,5 @@ p {
   font-family: 'Rubik', sans-serif;
 }
 #resume h4#address {
-  margin: 3em auto 0;
+  margin: 3rem auto 0;
 }
