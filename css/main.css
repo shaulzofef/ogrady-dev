@@ -180,6 +180,10 @@ p {
 }
 #publications a {
   margin-top: 2rem;
+  width: 10rem;
+  height: 5rem;
+  display: inline-block;
+  margin-top: 1rem;
   text-align: left;
 }
 .pub-text {
