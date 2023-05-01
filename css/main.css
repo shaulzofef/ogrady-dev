@@ -167,7 +167,6 @@ p {
 /* Publications */
 #publications ul {
   list-style: none;
-  margin: 0 auto;
   padding: 0;
 }
 #publications li {
@@ -184,6 +183,7 @@ p {
   width: 15rem;
   height: 5rem;
   display: block;
+  margin: 0 auto;
 }
 .pub-text {
   width: 10rem;
