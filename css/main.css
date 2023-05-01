@@ -183,7 +183,7 @@ p {
   margin-top: 2rem;
   width: 10rem;
   height: 6rem;
-  display: inline-block;
+  display: block;
 }
 .pub-text {
   width: 10rem;
