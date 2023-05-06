@@ -111,44 +111,34 @@ p {
   top: -.5rem;
 }
 #linkedin {
-  background: url("../img/linkedin.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/linkedin.png") 0%/2rem no-repeat;
 }
 .social-container:hover #linkedin {
-  background: url("../img/linkedin-hover.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/linkedin-hover.png") 0%/2rem no-repeat;
 }
 #twitter {
-  background: url("../img/twitter.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/twitter.png") 0%/2rem no-repeat;
 }
 .social-container:hover #twitter {
-  background: url("../img/twitter-hover.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/twitter-hover.png") 0%/2rem no-repeat;
 }
 #instagram {
-  background: url("../img/instagram.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/instagram.png") 0%/2rem no-repeat;
 }
 .social-container:hover #instagram {
-  background: url("../img/instagram-hover.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/instagram-hover.png") 0%/2rem no-repeat;
 }
 #powerpage {
-  background: url("../img/powerpage.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/powerpage.png") 0%/2rem no-repeat;
 }
 .social-container:hover #powerpage {
-  background: url("../img/powerpage-hover.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/powerpage-hover.png") 0%/2rem no-repeat;
 }
 #email {
-  background: url("../img/email.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/email.png") 0%/2rem no-repeat;
 }
 .social-container:hover #email {
-  background: url("../img/email-hover.png") no-repeat;
-  background-size: 2rem;
+  background: url("../img/email-hover.png") 0%/2rem no-repeat;
 }
 #jason-email {
   display: inline-block;
@@ -235,24 +225,19 @@ p {
     --background: #171f40;
 }
   #linkedin {
-    background: url("../img/linkedin-white.png") no-repeat;
-    background-size: 2rem;
+    background: url("../img/linkedin-white.png") 0%/2rem no-repeat;
   }
   #twitter {
-    background: url("../img/twitter-white.png") no-repeat;
-    background-size: 2rem;
+    background: url("../img/twitter-white.png") 0%/2rem  no-repeat;
   }
   #instagram {
-    background: url("../img/instagram-white.png") no-repeat;
-    background-size: 2rem;
+    background: url("../img/instagram-white.png") 0%/2rem  no-repeat;
   }
   #powerpage {
-    background: url("../img/powerpage-white.png") no-repeat;
-    background-size: 2rem;
+    background: url("../img/powerpage-white.png") 0%/2rem  no-repeat;
   }
   #email {
-    background: url("../img/email-white.png") no-repeat;
-    background-size: 2rem;
+    background: url("../img/email-white.png") 0%/2rem  no-repeat;
   }
   #jason-email {
     display: inline-block;

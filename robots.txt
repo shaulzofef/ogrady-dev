@@ -1,5 +1,4 @@
-# www.robotstxt.org/
-
-# Allow crawling of all content
+# www.robotstxt.org
+# Allow crawling all content, except resume.html
 User-agent: *
-Disallow:
+Disallow: /resume.html
