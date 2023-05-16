@@ -1,0 +1,26 @@
+@media (prefers-color-scheme: dark) {
+  	:root {
+		--main: #eee;
+		--highlight: #00f9ff;
+		--background: #171f40;
+	}
+  	#linkedin {
+		background: url("../img/linkedin-white.svg") 0%/2rem no-repeat;
+  	}
+  	#twitter {
+		background: url("../img/twitter-white.svg") 0%/2rem  no-repeat;
+  	}
+  	#instagram {
+		background: url("../img/instagram-white.svg") 0%/2rem  no-repeat;
+  	}
+  	#powerpage {
+		background: url("../img/powerpage-white.svg") 0%/2rem  no-repeat;
+  	}
+  	#email {
+		background: url("../img/email-white.svg") 0%/2rem  no-repeat;
+  	}
+  	#jason-email {
+		background: url("../img/jason-email-white.png") no-repeat;
+		background-size: 8rem;
+  	}
+  }

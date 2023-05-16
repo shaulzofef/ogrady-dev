@@ -1,0 +1,11 @@
+{
+    "name": "OGrady",
+    "short_name": "OGrady",
+    "icons": [{
+        "src": "favicon/google-touch-icon.png",
+        "sizes": "512x512"
+    }],
+    "theme_color": "#1A2966",
+    "background_color": "#1A2966",
+    "display": "fullscreen"
+}
