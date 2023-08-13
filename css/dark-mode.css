@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: dark) {
   	:root {
 		--main: #eee;
+        --feature: #243853;
 		--highlight: #00f9ff;
 		--background: #172840;
 	}
