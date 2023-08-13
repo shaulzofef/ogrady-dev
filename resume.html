@@ -34,15 +34,17 @@
   <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
   <link rel="manifest" href="favicon/site.webmanifest.json">
   
-  <script>
-  var password; 
-  var pass1="letmeinplease"; 
-  password=prompt('Enter Password',' '); 
-  if (password==pass1) 
-  alert('Correct! Click OK to Enter'); 
-  else { window.location="index.html"; 
-  } 
-  </script>
+ <script>
+   var password;
+   var pass1 = "letmeinplease";
+   password = prompt('Enter Password', ' ');
+   if (password == pass1)
+     if (confirm('Correct! Click OK to Enter'));
+   else {
+     window.location = "index.html";
+   }
+ </script>
+
 </head>
 
 <body>

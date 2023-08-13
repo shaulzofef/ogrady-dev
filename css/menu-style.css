@@ -21,8 +21,7 @@
 }
 
 .nav-wrapper nav{
-  position: absolute;
-  margin-top: -4em;
+  margin-top: 1em;
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -111,11 +110,11 @@ nav a:hover{
   margin-top: 0;
 }
 
-@media only screen and (min-width: 600px  ) {
+@media only screen and (min-width: 800px  ) {
   .nav-toogler {
   display: none;
   }
   .nav-wrapper ul {
-    width: 17em;
+    width: 20em;
   }
 }

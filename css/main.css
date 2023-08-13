@@ -1,6 +1,7 @@
 /* Main */
 :root {
-  --main: #1A2966;
+  --main: #172840;
+  --feature: #243853;
   --alt: #DC554F;
   --highlight: #14bec3;
   --background: #eee;
@@ -23,8 +24,17 @@ body {
   padding: 0 .5rem;
 }
 main {
-  margin: 7rem auto 2rem;
+  margin: 2rem auto;
   max-width: 100%;
+}
+h1 {
+  font-family: Dancing Script;
+  font-size: 1.4rem;
+  font-size: clamp(1.4rem, -0.10000000000000009rem + 5vw, 2.4rem);
+}
+h2 {
+  color: var(--highlight);
+  font-family: Dancing Script;
 }
 a {
   color: var(--main);
@@ -36,13 +46,16 @@ a:link {
   text-decoration: none;
 }
 .navigation {
-  font-size: 1.1rem;
+  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 0.25rem + 1.5vw, 1rem);
 }
+
 footer {
   font-size: .9rem;
   display: block;
   margin: 3rem 0;
-  padding-left: 3rem;
+  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 0.25rem + 1.5vw, 1rem);
 }
 #nav-contact .nav-contact a,
 #nav-publications .nav-publications a,
@@ -86,6 +99,31 @@ p {
  #boba {
    margin-left: -.2em;
  }
+ 
+#features {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 3rem auto 0;
+  max-width: 80vw;
+}
+.feature {
+  flex: 1 1 10rem;
+  background: var(--feature);
+  padding: .5rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-flow: column;
+}
+#features p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 0.25rem + 1.5vw, 1rem);
+  line-height: 1rem;
+}
+
+
 
 /* Contact */
 #contact ul {
@@ -158,12 +196,22 @@ footer .social-icon {
 }
 
 /* Publications */
+
 #publications ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 30rem;
   list-style: none;
   padding: 0;
 }
 #publications li {
-  margin-top: 1.5rem;
+  flex: 1;
+  max-width: 15rem;
+  background: var(--feature);
+  border-radius: .5rem;
 }
 #publications img {
   display: inline-block;
@@ -172,17 +220,16 @@ footer .social-icon {
   vertical-align: top;
 }
 #publications a {
-  margin-top: 2rem;
-  width: 15rem;
-  height: 5rem;
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: .5rem;
+  gap: 1rem;
+  justify-content: space-between;
 }
 .pub-text {
-  width: 10rem;
-  margin-top: 1rem;
-  display: inline-block;
   text-align: left;
+  min-width: 8rem;
+  padding: .2rem 0 0 .5rem;
 }
 #publications span {
   font-size: .7rem;
@@ -219,4 +266,14 @@ footer .social-icon {
   font-size: .8rem;
   font-weight: 500;
   color: var(--highlight);
+}
+
+@media (max-width: 1000px) {
+  #features {
+    flex-flow: row wrap;
+    max-width: 60vw;
+  }
+  .feature {
+    min-width: 40%;
+  }
 }
