@@ -1,4 +1,4 @@
-/* Main */
+/*-- Main --*/
 :root {
   --main: #172840;
   --feature: #d3fafc;
@@ -6,7 +6,6 @@
   --highlight: #14bec3;
   --background: #e4fdff;
 }
-
 html {
   font-size: 1.3rem;
 }
@@ -17,17 +16,24 @@ body {
   font-weight: 300;
   text-align: center;
   min-width: 370px;
-}
-.wrapper {
+  max-width: 36rem;
   padding: 0 .5rem;
+  margin: 0 auto;
 }
 main {
   margin: 2rem auto;
-  max-width: 100%;
+}
+p {
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 0.45rem + 2.6vw, 2.4rem);
+  line-height: 1.5rem;
+  line-height: clamp(1.5rem, 1rem + 2vw, 2.5rem);;
 }
 h1 {
   font-family: Dancing Script;
-  margin-top: 2rem;
+  margin: 0 0 2rem 0;
   font-size: 1.6rem;
   font-size: clamp(1.6rem, 0.8rem + 4vw, 2.4rem);
 }
@@ -44,8 +50,9 @@ a:link {
 a:hover {
   color: #DC554F;
 }
-#contact a {
-  text-decoration: none;
+.navigation, footer, #features p {
+ font-size: 0.7rem;
+ font-size: clamp(0.7rem, 0.25rem + 1.5vw, 1rem); 
 }
 .navigation {
   padding: 0;
@@ -55,32 +62,42 @@ a:hover {
   flex-flow: row wrap;
   justify-content: center;
   gap: 1rem;
-  font-size: 0.7rem;
-  font-size: clamp(0.7rem, 0.25rem + 1.5vw, 1rem);
 }
-
 footer {
   font-size: .9rem;
   display: block;
   margin: 3rem 0;
-  font-size: 0.7rem;
-  font-size: clamp(0.7rem, 0.25rem + 1.5vw, 1rem);
 }
-#nav-contact .nav-contact a,
-#nav-publications .nav-publications a,
-#nav-resume .nav-resume a {
-  color: var(--alt);
+ 
+/*-- Flex Container --*/
+#features, #contact main a {
+  display: flex;
+  flex-flow: row;
+  gap: .7rem;
 }
 
-/* Home */
-p {
-  font-family: 'Bree Serif', serif;
-  text-align: center;
-  font-size: 1.1rem;
-  font-size: clamp(1.1rem, 0.45rem + 2.6vw, 2.4rem);
-  line-height: 1.5rem;
-  line-height: clamp(1.5rem, 1rem + 2vw, 2.5rem);;
+#contact main ul, .feature {
+  display: flex;
+  flex-flow: column;
+  gap: .7rem;
 }
+/*-- Card --*/
+#publications main li, #contact main li, .feature {
+  background: var(--feature);
+  border-radius: .5rem;
+}
+
+/*-- Current Link --*/
+#contact .nav-contact a,
+#publications .nav-publications a,
+#resume .nav-resume a {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+/*-- Home --*/
 .under-position {
   position: relative;
 }
@@ -107,53 +124,39 @@ p {
  }
  #boba {
    margin-left: -.2em;
- }
- 
+ } 
+
+/*-- Features --*/
 #features {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  gap: .7rem;
   margin: 3rem auto 0;
-  max-width: 80vw;
-}
-.feature {
-  flex: 1 1 10rem;
-  background: var(--feature);
-  padding: .5rem;
-  border-radius: .5rem;
-  display: flex;
-  flex-flow: column;
+  justify-content: space-between;
 }
 #features p {
   font-family: 'Rubik', sans-serif;
-  font-size: 0.7rem;
-  font-size: clamp(0.7rem, 0.25rem + 1.5vw, 1rem);
   line-height: 1rem;
 }
+#features h2 {
+  margin-bottom: 0;
+}
+.feature {
+  flex: 10rem;
+  padding: .5rem;
+}
 
-
-/* Contact */
-#contact ul {
-  display: flex;
+/*-- Contact --*/
+#contact main ul {
+  max-width: 16rem;
   margin: 0 auto;
   padding: 0;
-  width: 80vw;
-  max-width: 20rem;
-  flex-flow: column nowrap;
-  gap: .7rem;
+  justify-content: space-between;
   list-style: none;
 }
-#contact li {
-  background: var(--feature);
-  border-radius: .5rem;
+#contact main li {
   height: 3rem;
   margin: 0 auto;
   width: 100%;
 }
-#contact a {
-  display: flex;
-  flex-flow: row;
+#contact main a {
   justify-content: center;
   align-items: center;
   gap: .7rem;
@@ -182,30 +185,26 @@ footer .social-icon {
   background-size: 8rem;
 }
 
-/* Publications */
-#publications ul {
+/*-- Publications --*/
+#publications main ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   gap: .7rem;
   margin: 0 auto;
-  max-width: 30rem;
   list-style: none;
   padding: 0;
 }
-#publications li {
+#publications main li {
   flex: 1;
-  max-width: 15rem;
-  background: var(--feature);
-  border-radius: .5rem;
 }
-#publications img {
+#publications main img {
   display: inline-block;
   height: 5rem;
   width: 3.22rem;
   vertical-align: top;
 }
-#publications a {
+#publications main a {
   display: flex;
   flex-flow: row nowrap;
   padding: .5rem;
@@ -221,23 +220,13 @@ footer .social-icon {
   font-size: .7rem;
 }
 
-/* Resume */
-#resume {
-  max-width: 30rem;
-}
-#resume ul {
+/*-- Resume --*/
+#resume main ul {
   text-align: left;
 }
-#resume li {
+#resume main li {
   margin-bottom: 1rem;
-  font-size: .8rem;
-}
-#resume h1, h2, h3, h4 {
-  margin: 0 auto;
-  font-weight: normal;
-}
-#resume h1 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 #resume h2 {
   font-size: 1.2rem;
@@ -254,9 +243,24 @@ footer .social-icon {
   color: var(--highlight);
 }
 
+/*-- Media Queries --*/
 @media (max-width: 900px) {
   #features {
     flex-flow: row wrap;
   }
 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --main: #eee;
+  --feature: #243853;
+  --highlight: #00f9ff;
+  --background: #172840;
+  }
+
+  #jason-email {
+  background: url("../img/jason-email-white.png") no-repeat;
+  background-size: 8rem;
+  }
 }
