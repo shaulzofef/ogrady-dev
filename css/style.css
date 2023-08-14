@@ -17,12 +17,15 @@ body {
   text-align: center;
   min-width: 370px;
   max-width: 36rem;
-  padding: 0 .5rem;
   margin: 0 auto;
+}
+#wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 .5rem;
 }
 main {
   margin: 2rem auto;
-  max-width: 100%;
 }
 p {
   font-family: 'Bree Serif', serif;
