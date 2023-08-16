@@ -1,9 +1,10 @@
 /*-- Main --*/
 :root {
   --main: #172840;
-  --feature: #d3fafc;
+  --feature: #caf0fa;
+  --feature-highlight: #b2e5f3;
   --alt: #DC554F;
-  --highlight: #14bec3;
+  --highlight: #13abc3;
   --background: #e4fdff;
 }
 html {
@@ -20,10 +21,6 @@ body {
   margin: 0 auto;
   padding: 0 .5rem;
 }
-.wrapper {
-  width: 100%;
-  max-width: 100%;
-}
 main {
   margin: 2rem auto;
   max-width: 100%;
@@ -34,7 +31,7 @@ p {
   font-size: 1.1rem;
   font-size: clamp(1.1rem, 0.45rem + 2.6vw, 2.4rem);
   line-height: 1.5rem;
-  line-height: clamp(1.5rem, 1rem + 2vw, 2.5rem);;
+  line-height: clamp(1.5rem, 0.4rem + 5.5vw, 2.6rem);
 }
 h1 {
   font-family: Dancing Script;
@@ -48,12 +45,15 @@ h2 {
 }
 a {
   color: var(--main);
+  background: var(--feature);
+  border-radius: .5rem;
+  padding: .1rem .5rem;
+}
+a:hover{
+  background: var(--feature-highlight);
 }
 a:link {
   text-decoration: none;
-}
-a:hover {
-  color: #DC554F;
 }
 .navigation, footer, #features p {
  font-size: 0.7rem;
@@ -66,12 +66,13 @@ a:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: .4rem;
 }
 footer {
   font-size: .9rem;
   display: block;
   margin: 3rem 0;
+  line-height: 1.5rem;
 }
  
 /*-- Flex Container --*/
@@ -80,16 +81,10 @@ footer {
   flex-flow: row;
   gap: .7rem;
 }
-
 #contact main ul, .feature {
   display: flex;
   flex-flow: column;
   gap: .7rem;
-}
-/*-- Card --*/
-#publications main li, #contact main li, .feature {
-  background: var(--feature);
-  border-radius: .5rem;
 }
 
 /*-- Current Link --*/
@@ -103,6 +98,9 @@ footer {
 }
 
 /*-- Home --*/
+#home p {
+  position: relative;
+}
 .under-position {
   position: relative;
 }
@@ -120,16 +118,9 @@ footer {
 .emoji {
   width: 1.2em;
   height: 1.2em;
-}
-#prexel, #california {
-  margin-left: .2em;
-}
- #dog {
-   margin-left: .4em;
- }
- #boba {
-   margin-left: -.2em;
- } 
+  position: absolute;
+  margin-top: .4rem;
+} 
 
 /*-- Features --*/
 #features {
@@ -145,7 +136,6 @@ footer {
 }
 .feature {
   flex: 10rem;
-  padding: .5rem;
 }
 
 /*-- Contact --*/
@@ -157,7 +147,6 @@ footer {
   list-style: none;
 }
 #contact main li {
-  height: 3rem;
   margin: 0 auto;
   width: 100%;
 }
@@ -165,8 +154,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: .7rem;
-  width: 100%;
-  height: 100%;
+  line-height: 2rem;
 }
 .social-icon {
   display: inline-block;
@@ -183,10 +171,6 @@ footer .social-icon {
   width: 8rem;
   line-height: 1.1rem;
   background: url("../img/jason-email.png") no-repeat;
-  background-size: 8rem;
-}
-#contact a:hover #jason-email {
-  background: url("../img/jason-email-hover.png") no-repeat;
   background-size: 8rem;
 }
 
@@ -260,6 +244,7 @@ footer .social-icon {
   :root {
   --main: #eee;
   --feature: #243853;
+  --feature-highlight: #334f74;
   --highlight: #00f9ff;
   --background: #172840;
   }
