@@ -1,0 +1,256 @@
+/*-- Main --*/
+:root {
+  --main: #172840;
+  --feature: #caf0fa;
+  --feature-highlight: #b2e5f3;
+  --alt: #DC554F;
+  --highlight: #13abc3;
+  --background: #e4fdff;
+}
+html {
+  font-size: 1.3rem;
+}
+body {
+  background-color: var(--background);
+  color: var(--main);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  min-width: 300px;
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 0 .5rem;
+}
+main {
+  margin: 2rem auto;
+  max-width: 100%;
+}
+p {
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 0.45rem + 2.6vw, 2.4rem);
+  line-height: 1.5rem;
+  line-height: clamp(1.5rem, 0.4rem + 5.5vw, 2.6rem);
+}
+h1 {
+  font-family: Dancing Script;
+  margin: 0 0 2rem 0;
+  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 0.8rem + 4vw, 2.4rem);
+}
+h2 {
+  color: var(--highlight);
+  font-family: Dancing Script;
+}
+a {
+  color: var(--main);
+  background: var(--feature);
+  border-radius: .5rem;
+  padding: .1rem .5rem;
+}
+a:hover{
+  background: var(--feature-highlight);
+}
+a:link {
+  text-decoration: none;
+}
+.navigation, footer, #features p {
+ font-size: 0.7rem;
+ font-size: clamp(0.7rem, 0.25rem + 1.5vw, 1rem); 
+}
+.navigation {
+  padding: 0;
+  margin: 1rem auto;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: .4rem;
+}
+footer {
+  font-size: .9rem;
+  display: block;
+  margin: 3rem 0;
+  line-height: 1.5rem;
+}
+ 
+/*-- Flex Container --*/
+#features, #contact main a {
+  display: flex;
+  flex-flow: row;
+  gap: .7rem;
+}
+#contact main ul, .feature {
+  display: flex;
+  flex-flow: column;
+  gap: .7rem;
+}
+
+/*-- Current Link --*/
+#contact .nav-contact a,
+#publications .nav-publications a,
+#resume .nav-resume a {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+/*-- Home --*/
+#home p {
+  position: relative;
+}
+.under-position {
+  position: relative;
+}
+.under {
+  position: absolute;
+  top: 1.9em;
+  left: -12em;
+  font-size: .55em;
+  line-height: 1em;
+  width: 10em;
+  color: var(--alt);
+  font-family: 'Dancing Script', cursive;
+  text-align: right;
+}
+.emoji {
+  width: 1.2em;
+  height: 1.2em;
+  position: absolute;
+  margin-top: .4rem;
+} 
+
+/*-- Features --*/
+#features {
+  margin: 3rem auto 0;
+  justify-content: space-between;
+}
+#features p {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1rem;
+}
+#features h2 {
+  margin-bottom: 0;
+}
+.feature {
+  flex: 10rem;
+}
+
+/*-- Contact --*/
+#contact main ul {
+  max-width: 16rem;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+}
+#contact main li {
+  margin: 0 auto;
+  width: 100%;
+}
+#contact main a {
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+  line-height: 2rem;
+}
+.social-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+footer .social-icon {
+  top: -.5rem;
+}
+#jason-email {
+  display: inline-block;
+  position: inherit;
+  top: 0;
+  width: 8rem;
+  line-height: 1.1rem;
+  background: url("../img/jason-email.png") no-repeat;
+  background-size: 8rem;
+}
+
+/*-- Publications --*/
+#publications main ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: .7rem;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+#publications main li {
+  flex: 1;
+}
+#publications main img {
+  display: inline-block;
+  height: 5rem;
+  width: 3.22rem;
+  vertical-align: top;
+}
+#publications main a {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: .5rem;
+  gap: .7rem;
+  justify-content: space-between;
+}
+.pub-text {
+  text-align: left;
+  min-width: 8rem;
+  padding: .2rem 0 0 .5rem;
+}
+#publications span {
+  font-size: .7rem;
+}
+
+/*-- Resume --*/
+#resume main ul {
+  text-align: left;
+}
+#resume main li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+#resume h2 {
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+  color: var(--alt);
+}
+#resume span {
+  color: var(--highlight);
+}
+#resume h4#address {
+  margin-top: 2rem;
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--highlight);
+}
+
+/*-- Media Queries --*/
+@media (max-width: 900px) {
+  #features {
+    flex-flow: row wrap;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --main: #eee;
+  --feature: #243853;
+  --feature-highlight: #334f74;
+  --highlight: #00f9ff;
+  --background: #172840;
+  }
+
+  #jason-email {
+  background: url("../img/jason-email-white.png") no-repeat;
+  background-size: 8rem;
+  }
+}
